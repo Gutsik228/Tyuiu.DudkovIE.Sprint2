@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.DudkovIE.Sprint2.Task2.V27.Lib;
-namespace Tyuiu.DudkovIE.Sprint2.Task2.V27
+using Tyuiu.DudkovIE.Sprint2.Task3.V11.Lib;
+namespace Tyuiu.DudkovIE.Sprint2.Task3.V11
 {
     class Program
     {
@@ -26,24 +26,16 @@ namespace Tyuiu.DudkovIE.Sprint2.Task2.V27
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            int x, y;
+            int x;
             Console.WriteLine("Введите значение переменной X:");
             x = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите значение переменной Y:");
-            y = Convert.ToInt32(Console.ReadLine());
-
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            var res = ds.CheckDotInShadedArea(x, y);
-            if (res)
-                Console.WriteLine("Точка находится в заштрихованной области");
-            else
-                Console.WriteLine("Точка не находится в заштрихованной области");
+            var res = ds.Calculate(x);
+            Console.WriteLine(Math.Round(res, 3));
             Console.ReadKey();
-
-
         }
     }
 }
