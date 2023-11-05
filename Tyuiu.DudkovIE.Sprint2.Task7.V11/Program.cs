@@ -40,6 +40,8 @@ namespace Tyuiu.DudkovIE.Sprint2.Task7.V11
             var res = ds.CheckDotInShadedArea(x, y);
             Console.WriteLine(res);
             Console.ReadKey();
+
+
         }
     }
 }
